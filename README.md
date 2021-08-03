@@ -2,7 +2,8 @@
 
 #This are just offests i upload sigs in some hours...
 
-StaticOffsets {
+Static Offests
+
 			uintptr_t OwningGameInstance = 0x180;
 			uintptr_t LocalPlayers = 0x38;
 			uintptr_t PlayerController = 0x30;
@@ -35,4 +36,3 @@ StaticOffsets {
 			uintptr_t LastFireTimeVerified = 0x9C0;//0x900;
 			uintptr_t ReloadTime = 0xE04;
 			uintptr_t bAlreadySearched = 0xD71;
-}
