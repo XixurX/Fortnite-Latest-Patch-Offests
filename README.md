@@ -35,3 +35,4 @@ StaticOffsets {
 			uintptr_t LastFireTimeVerified = 0x9C0;//0x900;
 			uintptr_t ReloadTime = 0xE04;
 			uintptr_t bAlreadySearched = 0xD71;
+}
