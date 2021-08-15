@@ -53,6 +53,7 @@ MinSpeedForSpreadMultiplier: 0x184
 MaxSpeedForSpreadMultiplier: 0x188
 bAlreadySearched: 0xD49
 RemoteViewPitch: 0x232
+
 Uworld_Sig = "48 8B 05 ? ? ? ? 4D 8B C2"; < uworld
 Gobject_Sig = "48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04 D1";
 Free_Sig = "48 85 C9 0F 84 ? ? ? ? 53 48 83 EC 20 48 89 7C 24 30 48 8B D9 48 8B 3D ? ? ? ? 48 85 FF 0F 84 ? ? ? ? 48 8B 07 4C 8B 40 30 48 8D 05 ? ? ? ? 4C 3B C0"; 
