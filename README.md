@@ -5,7 +5,7 @@ latest fortnite offests + sigs, i will update this rep every update!
 Static Offests + Sigs
 
 ```cpp
-Uworld: 0x9352870 (http://xenos.sexy/dumper)
+Uworld: 0x9352870
 Levels: 0x138
 PersistentLevel: 0x30
 LocalPlayers: 0x38
