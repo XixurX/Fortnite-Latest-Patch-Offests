@@ -4,69 +4,53 @@ latest fortnite offests + sigs, i will update this rep every update!
 
 Static Offests + Sigs
 
-```cpp
-Uworld: 0x9352870
-Levels: 0x138
-PersistentLevel: 0x30
-LocalPlayers: 0x38
-OwningGameInstance: 0x180
-ControlRotation: 0x288
-PlayerCameraManager: 0x2B8
-ClientReturnToMainMenuWithTextReason: 0x0
-AcknowledgedPawn: 0x2A0
-PlayerState: 0x240
-RootComponent: 0x130
-Mesh: 0x280
-RelativeLocation: 0x11C
-ComponentVelocity: 0x140
-StaticMesh: 0x480
-CachedWorldSpaceBounds: 0x618
-CustomTimeDilation: 0x98
-LastFireTimeVerified: 0x9C0
-LastFireTime: 0x9BC
-bIsDBNO: 0x57E
-bSpotted: 0x542
-TeamIndex: 0xED0
-SquadId: 0x1054
-PrimaryPickupItemEntry: 0x2A8
-DisplayName: 0x88
-Tier: 0x6C
-ItemDefinition: 0x18
-CurrentWeapon: 0x600
-WeaponData: 0x378
-LastFireAbilityTime: 0xC08
-WeaponStatHandle: 0x820
-FireStartLoc: 0x880
-ReloadTime: 0x10C
-ReloadScale: 0x110
-ChargeDownTime: 0x13C
-RecoilHoriz: 0x210
-RecoilVert: 0x200
-RecoilDownsightsMultiplier: 0x22C
-Spread: 0x16C
-SpreadDownsights: 0x170
-StandingStillSpreadMultiplier: 0x174
-AthenaJumpingFallingSpreadMultiplier: 0x17C
-AthenaCrouchingSpreadMultiplier: 0x178
-AthenaSprintingSpreadMultiplier: 0x22C
-MinSpeedForSpreadMultiplier: 0x184
-MaxSpeedForSpreadMultiplier: 0x188
-bAlreadySearched: 0xD49
-RemoteViewPitch: 0x232
+	```cpp
 
-Uworld_Sig = "48 8B 05 ? ? ? ? 4D 8B C2"; < uworld
+  namespace offsets {
+	uintptr_t OwningGameInstance = 0x180;
+	uintptr_t LocalPlayers = 0x38;
+	uintptr_t PlayerController = 0x30;
+	uintptr_t PlayerCameraManager = 0x2B8;
+	uintptr_t AcknowledgedPawn = 0x2A0;
+	uintptr_t Levels = 0x138;
+	uintptr_t PersistentLevel = 0x30;
+	uintptr_t AActors = 0x98;
+	uintptr_t ActorCount = 0xA0;
+	uintptr_t ComponentVelocity = 0x140;
+	uintptr_t RootComponent = 0x130;
+	uintptr_t FireStartLoc = 0x878;
+	uintptr_t RelativeLocation = 0x11c;
+	uintptr_t RelativeRotation = 0x128;
+	uintptr_t CurrentWeapon = 0x410;
+	uintptr_t PlayerState = 0x240;
+	uintptr_t Mesh = 0x280;
+	uintptr_t TeamIndex = 0xED0;
+	uintptr_t bDisableEquipAnimation = 0x2B4;
+	uintptr_t bADSWhileNotOnGround = 0x3B74;
+	uintptr_t ReviveFromDBNOTime = 0x3420;
+	uintptr_t CustomTimeDilation = 0x538;
+	uintptr_t LastFireTime = 0x9BC;
+	uintptr_t LastFireTimeVerified = 0x9C0;//0x9C0;
 
-Gobject_Sig = "48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04 D1";
 
-Free_Sig = "48 85 C9 0F 84 ? ? ? ? 53 48 83 EC 20 48 89 7C 24 30 48 8B D9 48 8B 3D ? ? ? ? 48 85 FF 0F 84 ? ? ? ? 48 8B 07 4C 8B 40 30 48 8D 05 ? ? ? ? 4C 3B C0"; 
+	const char* Uworld_Sig = "48 8B 05 ? ? ? ? 4D 8B C2"; //uworld
 
-ProjectWorldToScreen_Sig = "E8 ? ? ? ? 41 88 07 48 83 C4 30"; 
+	const char* Gobject_Sig = "48 8B 05 ? ? ? ? 48 8B 0C C8 48 8B 04 D1";
 
-LineOfSightTo_Sig = "E8 ? ? ? ? 48 8B 0D ? ? ? ? 33 D2 40 8A F8"; 
+	const char* Free_Sig = "48 85 C9 0F 84 ? ? ? ? 53 48 83 EC 20 48 89 7C 24 30 48 8B D9 48 8B 3D ? ? ? ? 48 85 FF 0F 84 ? ? ? ? 48 8B 07 4C 8B 40 30 48 8D 05 ? ? ? ? 4C 3B C0"; //Free
 
-GetNameByIndex_Sig = "48 89 5C 24 ? 48 89 74 24 ? 55 57 41 56 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 45 33 F6 48 8B F2 44 39 71 04 0F 85 ? ? ? ? 8B 19 0F B7 FB E8 ? ? ? ? 8B CB 48 8D 54 24"; 
+	const char* ProjectWorldToScreen_Sig = "E8 ? ? ? ? 41 88 07 48 83 C4 30"; //ProjectWorldToScreen
 
-BoneMatrix_Sig = "E8 ? ? ? ? 48 8B 47 30 F3 0F 10 45";
+	const char* LineOfSightTo_Sig = "E8 ? ? ? ? 48 8B 0D ? ? ? ? 33 D2 40 8A F8"; //LineOfSight
 
-DiscordPresentScene_sig = "56 57 53 48 83 EC 30 44 89 C6"; 
+	const char* GetNameByIndex_Sig = "48 89 5C 24 ? 48 89 74 24 ? 55 57 41 56 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 45 33 F6 48 8B F2 44 39 71 04 0F 85 ? ? ? ? 8B 19 0F B7 FB E8 ? ? ? ? 8B CB 48 8D 54 24"; //GetNameByIndex
+
+	const char* BoneMatrix_Sig = "E8 ? ? ? ? 48 8B 47 30 F3 0F 10 45"; //BoneMatrix
+
+	const char* Spread_Sig = "E8 ? ? ? ? 48 8D 4B 28 E8 ? ? ? ? 48 8B C8"; //Spread
+
+	const char* SpreadCaller_sig = "0F 57 D2 48 8D 4C 24 ? 41 0F 28 CC E8 ? ? ? ? 48 8B 4D B0 0F 28 F0 48 85 C9"; //SpreadCaller
+
+	const char* DiscordPresentScene_sig = "56 57 53 48 83 EC 30 44 89 C6"; //Discord PresentScene
+  
 ```
