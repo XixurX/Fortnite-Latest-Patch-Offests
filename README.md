@@ -2,7 +2,7 @@
 
 latest fortnite offests + sigs, i will update this rep every update!
 
-Static Offests + Sigs
+Static Offests + Sigs [ Updated For 17.40 ]
 
 
 
