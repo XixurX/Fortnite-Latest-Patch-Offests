@@ -4,9 +4,8 @@ latest fortnite offests + sigs, i will update this rep every update!
 
 Static Offests + Sigs
 
-	```cpp
 
-  namespace offsets {
+
 	uintptr_t OwningGameInstance = 0x180;
 	uintptr_t LocalPlayers = 0x38;
 	uintptr_t PlayerController = 0x30;
@@ -53,4 +52,4 @@ Static Offests + Sigs
 
 	const char* DiscordPresentScene_sig = "56 57 53 48 83 EC 30 44 89 C6"; //Discord PresentScene
   
-```
+
